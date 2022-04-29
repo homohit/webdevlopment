@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<head>
+    <meta name="description" content="width=device-width,inital-scale=1.0">
+    <meta charset="UTF-8">
+</head>
+<style>
+    .container {
+        background-color: yellow;
+    }
+    
+    .box {
+        background-color: green;
+        width: 250px;
+        height: 250px;
+        position: relative;
+        animation-name: mohit;/*animation-name :   xyz indentifiy the name of animation*/
+        animation-duration: 3s;  /*identifiy the duration of time*/
+        animation-iteration-count: 1;  /*identifiy the number of iteration animation will be perform*/
+        animation-fill-mode: alternative;/*identifiy mode after animation */
+        animation-timing-function: ease-out;
+        animation-direction: reverse;/*identifiy  direction of animation*/
+        animation-name: dubey;
+    }
+    /*animation creation
+      @keyframe animation-name{
+          statements;
+      }
+      method :1
+    {
+      from{
+
+      }
+      to{
+
+      }
+    }
+    method :2
+    {
+        using persents
+        0%{}
+        and so on
+    }
+    */
+        @keyframes dubey {
+        0% {
+            top: 0px;
+            left: 0px;
+        }
+        25% {
+            top: 350px;
+            left: 0px;
+        }
+        50% {
+            top: 350px;
+            left: 250px;
+        }
+        75% {
+            top: 0px;
+            left: 250px;
+        }
+        100% {
+            top: 0px;
+            left: 0px;
+        }
+    }
+    
+    @keyframes mohit {
+        from {
+            width: 200px;
+        }
+        to {
+            width: 345px;
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box">This is container</div>
+    </div>
+
+</body>
+
+</html>
